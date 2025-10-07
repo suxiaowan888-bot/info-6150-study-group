@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Restaurant</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        body {
+            font-family: "microsoft yahei", Arial, sans-serif;
+            align-items: center;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            background:
+                linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+                url("picture/R.jfif");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+
+        }
+
+        h1 {
+            color: #5f1414;
+            text-align: center;
+            padding: 20px 0;
+            margin: 0;
+
+        }
+
+        .card-img {
+            box-shadow: 0 5px 20px rgba(128, 92, 92, 0.5);
+            border-radius: 10px;
+        }
+        .price{
+            font-size: 20px;
+            color: #ed0000;
+            font-weight: bold;
+        }
+
+        .buy-button {
+            padding: 12px 24px;
+            background-color: #06c1ffc2;
+            color: rgb(244, 244, 244);
+            margin: 10px 0;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .gallery {
+
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(400px, 1fr));
+            gap: 50px;
+            padding: 30px;
+
+        }
+
+        .buy-button:hover {
+            background-color: #2e61d8;
+            transform: translateY(-2px);
+
+        }
+
+        .buy-button:active {
+            background-color: #092964;
+            transform: scale(0.98);
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Restaurant</h1>
+        <nav>
+            <ul>
+                <li><a href="#Menu">Menu</a></li>
+                <li><a href="#Hotpot">Hotpot</a></li>
+                <li><a href="#Huainan beef soup">Huainan beef soup</a></li>
+                <li><a href="#Stinky tofu">Stinky tofu</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="gallery">
+        <section id="Menu">
+            <h2>Menu</h2>
+            <p>Hello!Welcome to my restaurant,here are all the foods I like so wish you like as well,thank you!</p>
+        </section>
+        <section id="Hotpot">
+            <h2>Hotpot</h2>
+            <p>Let us check the hotpot!</p>
+            <img src="https://bkimg.cdn.bcebos.com/pic/4ec2d5628535e5dde711c2db6b94b0efce1b9d16c42f?x-bce-process=image/format,f_auto/watermark,image_d2F0ZXIvYmFpa2UyNzI,g_7,xp_5,yp_5,P_20/resize,m_lfit,limit_1,h_1080"
+                alt="Hotpot" width="500" height="300" class="card-img">
+            <p><b>Hotpot</b>very fragrant, very spicy and very delicious!A traditional food from China</p>
+            <p class="price">$30.00</p>
+            <button class="buy-button">Buy now!</button>
+        </section>
+        <section id="Huainan beef soup">
+            <h2>Huainan beef soup</h2>
+            <p>Let us check the Huainan beef soup!</p>
+            <img class="card-img"
+                src="https://tse1.mm.bing.net/th/id/OIP.C28E_S-LN1EFRrhYFD6J8wHaG9?rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Huainan beef soup" width="500" height="300">
+            <p><b>Huainan beef soup</b>Very delicious beef soup and chewy vermicelli!A traditional food from AnHui</p>
+            <p class="price">$5.00</p>
+            <button class="buy-button">Buy now!</button>
+        </section>
+        <section id="Stinky tofu">
+            <h2>Stinky tofu</h2>
+            <p>Let us check the stinky tofu!</p>
+            <img class="card-img" src="https://pic.nximg.cn/file/20230613/12938277_162651755101_2.jpg" alt="Stinky tofu"
+                width="400" height="300">
+            <p><b>Stinky tofu</b>very freak smell, Once you start eating, you can't stop!A traditional food from HuNan
+            </p>
+            <p class="price">$3.00</p>
+            <button class="buy-button ">Buy now!</button>
+        </section>
+        <section id="Contact">
+            <h2>Contact</h2>
+            <p>If you wanna taste these foods, please call me right now!</p>
+            <p><b>Phone:</b> 123-456-7890</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;My Restaurant</p>
+    </footer>
+
+</html>
