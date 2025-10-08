@@ -1,0 +1,4 @@
+Code organization: HTML structure is clean and organized.
+Layout implementation: Used flexbox and grid correctly.
+Responsiveness: Though not best for mobile yet, the page is very responsive.
+
